@@ -16,21 +16,17 @@ void task_1() {
 }
 
 void task_2() {
-	float ax, ay, bx, by, cx, cy, aclength, bclength;
+	float a, b, c, ac, bc;
 	cout << "TASK 2\nLength AC, BC and sum";
-	cout << "\nAx, Ay\n";
-	cin >> ax >> ay;
-	cout << "\nBx, By\n";
-	cin >> bx >> by;
-	cout << "\nCx, Cy\n";
-	cin >> cx >> cy;
+	cout << "\nA B C\n";
+	cin >> a >> b >> c;
 
-	aclength = sqrt(pow(ax - cx, 2) + pow(ay - cy, 2));
-	bclength = sqrt(pow(bx - cx, 2) + pow(by - cy, 2));
+	ac = abs(a - c);
+	bc = abs(b - c);
 
-	cout << "\nAC length is " << aclength;
-	cout << "\nBC length is " << bclength;
-	cout << "\nSum is " << aclength + bclength;
+	cout << "\nAC length is " << ac;
+	cout << "\nBC length is " << bc;
+	cout << "\nSum is " << ac + bc;
 	
 	cout << "\n\n";
 }
@@ -90,11 +86,11 @@ void task_5() {
 }
 
 int main() {
-	task_1();
+	//task_1();
 	task_2();
-	task_3();
-	task_4();
-	task_5();
+	//task_3();
+	//task_4();
+	//task_5();
 
 	return (0);
 }
