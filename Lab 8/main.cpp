@@ -11,6 +11,9 @@ void task_1() {
 	cin >> b;
 
 	kb = b / 1024;
+	if (b % 1024)
+		kb += 1;
+
 	cout << "\nKBytes is " << kb;
 	cout << "\n\n";
 }
@@ -61,10 +64,10 @@ void task_5() {
 
 int main() {
 	task_1();
-	task_2();
-	task_3();
-	task_4();
-	task_5();
+	//task_2();
+	//task_3();
+	//task_4();
+	//task_5();
 
 	return (0);
 }
