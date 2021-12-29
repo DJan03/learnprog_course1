@@ -37,6 +37,7 @@ void task_4() {
 	answer = (int)(a / c) * (int)(b / c);
 
 	cout << "\nAnswer is " << answer;
+	cout << "\nOther area is " << (a * b) - (c * c) * answer;
 	cout << "\n\n";
 }
 

@@ -19,7 +19,7 @@ void task_2() {
 	int a, b, c;
 	cin >> a >> b >> c;
 
-	if ((a < b < c) == true)
+	if ((a < b && b < c) == true)
 		cout << "\nCorrect";
 	else
 		cout << "\nWrong";
