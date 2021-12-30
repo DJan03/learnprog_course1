@@ -96,9 +96,9 @@ void task_4() {
 	cout << "\Return: ";
 	for (int i = 0; i < n; i++) {
 		if (i % 2 == 0)
-			cout << arr[i] << " ";
+			cout << arr[(int)(i / 2)] << " ";
 		else
-			cout << arr[n - i] << " ";
+			cout << arr[n - (int)((i - 1) / 2) - 1] << " ";
 	}
 	cout << "\n\n";
 }
@@ -126,8 +126,8 @@ void task_5() {
 	}
 	cout << "\n";
 	cout << "\Return even: ";
-	for (int i = 1; i < n; i += 2) {
-		cout << arr[n - i] << " ";
+	for (int i = n - n % 2 - 1; i > 0; i -= 2) {
+		cout << arr[i] << " ";
 	}
 	cout << "\n\n";
 }
