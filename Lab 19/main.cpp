@@ -3,11 +3,11 @@
 using namespace std;
 
 void task_1() {
-	int n, last, k = 0, j = 0;
+	int n, last, k = 0, j = 1;
 	int* a;
 	int* b;
 
-	cout << "TASK 1\nArray A (size N)\nRemove Doubles\n\nN\n";
+	cout << "TASK 1\nArray A (size N)\nRemove repeats\n\nN\n";
 	cin >> n;
 
 	a = (int*)malloc(sizeof(int) * n);
@@ -22,7 +22,7 @@ void task_1() {
 	for (int i = 1; i < n; i++)
 		if (a[i] == a[i - 1])
 			k++;
-	
+
 	b = (int*)malloc(sizeof(int) * (n - k));
 	if (b == NULL) {
 		cout << "No space\n\n";
@@ -45,7 +45,7 @@ void task_2() {
 	int* af;
 	int* b;
 
-	cout << "TASK 2\nArray A (size N)\nRemove Twises\n\nN\n";
+	cout << "TASK 2\nArray A (size N)\nRemove Doubles\n\nN\n";
 	cin >> n;
 
 	a = (int*)malloc(sizeof(int) * n);
